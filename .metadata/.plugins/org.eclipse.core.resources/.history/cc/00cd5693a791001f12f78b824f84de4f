@@ -1,5 +1,0 @@
-package br.upe.kafkademo.controller;
-
-public class KafkaController {
-
-}

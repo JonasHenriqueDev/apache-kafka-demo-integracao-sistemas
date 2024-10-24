@@ -1,5 +1,0 @@
-package br.upe.kafkademo;
-
-public class KafkaConsumerConfig {
-
-}
