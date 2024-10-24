@@ -6,12 +6,12 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class KafkaConsumer {
+public class Consumer {
 
-    private static final Logger logger = LoggerFactory.getLogger(KafkaConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(Consumer.class);
     private String lastMessage;
 
-    @KafkaListener(topics = "teste", groupId = "group_id")
+    @KafkaListener(topics = "teste", groupId = "group_id_2")
     public void consume(String message) {
         this.lastMessage = message;
         logger.info("Mensagem consumida: {}", message);
