@@ -1,0 +1,23 @@
+package br.upe.student_service.config;
+
+import java.util.HashMap;
+
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import lombok.RequiredArgsConstructor;
+
+@Configuration
+@RequiredArgsConstructor
+public class JsonProducerConfig {
+	
+	private final KafkaProperties properties;
+	
+	@Bean
+	public ProducerFactory jsonProducerFactory() {
+		var configs = new HashMap<String, Object>();
+		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, properties.getBootstrapServers());
+	}
+}

@@ -1,0 +1,5 @@
+package br.upe.student_service.config;
+
+public class JsonProducerConfig {
+
+}

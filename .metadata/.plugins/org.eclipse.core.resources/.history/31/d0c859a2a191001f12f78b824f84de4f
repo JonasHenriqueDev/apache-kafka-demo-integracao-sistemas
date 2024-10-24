@@ -1,0 +1,15 @@
+package br.upe.student_service.config;
+
+import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.context.annotation.Configuration;
+
+import lombok.RequiredArgsConstructor;
+
+@Configuration
+@RequiredArgsConstructor
+public class JsonProducerConfig {
+	
+	private final KafkaProperties properties;
+	
+	@Bean
+}

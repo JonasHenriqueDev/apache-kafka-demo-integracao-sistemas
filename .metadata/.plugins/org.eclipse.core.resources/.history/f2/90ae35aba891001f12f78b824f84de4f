@@ -1,0 +1,5 @@
+package br.upe.kafkademo.consumers;
+
+public class KafkaConsumer {
+
+}
