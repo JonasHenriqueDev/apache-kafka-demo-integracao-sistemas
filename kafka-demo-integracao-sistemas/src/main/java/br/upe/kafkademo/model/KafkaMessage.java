@@ -7,5 +7,5 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class KafkaMessage {
 	private String key;
-    private String value;
+ private String value;
 }
